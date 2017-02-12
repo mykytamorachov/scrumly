@@ -3,25 +3,27 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
+import { SprintsListComponent } from './sprints-list.component';
+import { SprintComponent } from '../sprint/sprint.component';
+import { SprintService } from '../../services/sprint.service';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
-import { SidenavComponent } from './sidenav.component';
-
-describe('SidenavComponent', () => {
-  let component: SidenavComponent;
-  let fixture: ComponentFixture<SidenavComponent>;
+describe('SprintsListComponent', () => {
+  let component: SprintsListComponent;
+  let fixture: ComponentFixture<SprintsListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [MaterialModule.forRoot()],
-      declarations: [ SidenavComponent ]
+      imports:[ MaterialModule.forRoot() ],
+      providers: [SprintService],
+      declarations: [ SprintsListComponent, SprintComponent],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SidenavComponent);
+    fixture = TestBed.createComponent(SprintsListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
