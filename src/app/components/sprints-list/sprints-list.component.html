@@ -1,0 +1,4 @@
+<button md-button (click)=addSprintToList()>Add Sprint</button>
+<md-nav-list>
+    <scrumly-sprint *ngFor="let sprintItem of sprintList" [sprint]="sprintItem"></scrumly-sprint>
+</md-nav-list>

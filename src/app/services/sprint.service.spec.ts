@@ -3,6 +3,9 @@
 import { TestBed, async, inject } from '@angular/core/testing';
 import { SprintService } from './sprint.service';
 
+import { Sprint } from '../classes/sprint'
+import { SprintType } from '../types/sprint-type'
+
 describe('SprintService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -10,7 +13,7 @@ describe('SprintService', () => {
     });
   });
 
-  it('should ...', inject([SprintService], (service: SprintService) => {
-    expect(service).toBeTruthy();
+  it('should be defined', inject([SprintService], (service: SprintService) => {
+    expect(service).toBeDefined();
   }));
 });
