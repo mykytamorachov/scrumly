@@ -6,21 +6,17 @@ import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
-import { SidenavComponent } from './components/sidenav/sidenav.component';
-import { SprintsListComponent } from './components/sprints-list/sprints-list.component';
-import { SprintComponent } from './components/sprint/sprint.component';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidenavComponent,
-    SprintsListComponent,
-    SprintComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    ComponentsModule,
     MaterialModule.forRoot()
   ],
   providers: [],

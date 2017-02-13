@@ -12,17 +12,5 @@ export class Sprint {
 
   public constructor() {}
 
-  public createInstanceFromObject(object: SprintType): Sprint {
-    try {
-      let sprint = new Sprint();
-      Object.keys(object).map(function(key, index) {
-        sprint[key] = object[key];
-      });
-      return sprint;
-    }
-    catch (e) {
-      return;
-    }
-  }
   
 }

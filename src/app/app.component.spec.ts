@@ -7,17 +7,18 @@ import { SprintsListComponent } from './components/sprints-list/sprints-list.com
 import { SprintComponent } from './components/sprint/sprint.component';
 
 import { MaterialModule } from '@angular/material';
+import { ComponentsModule } from './components/components.module';
 
 
 describe('AppComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [MaterialModule.forRoot()],
+      imports: [
+        ComponentsModule,
+        MaterialModule.forRoot()
+      ],
       declarations: [
-        AppComponent,
-        SidenavComponent,
-        SprintsListComponent,
-        SprintComponent
+        AppComponent
       ],
     });
     TestBed.compileComponents();
