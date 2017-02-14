@@ -17,10 +17,10 @@ export class SprintsListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getSprintsList();
+    this.getSprintsList_();
   }
 
-  public getSprintsList(): void {
+  private getSprintsList_(): void {
     this.sprintList = this.sprintService.getSprints();
   }
 
