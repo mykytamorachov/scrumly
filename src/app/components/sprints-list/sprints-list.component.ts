@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SprintService } from '../../services/sprint.service';
-import { SprintType } from '../../types/sprint-type';
-import { Sprint } from '../../classes/sprint';
+import { ISprint } from '../../types/ISprint';
+import { Sprint } from '../../classes/Sprint';
 
 
 @Component({
@@ -12,7 +12,7 @@ import { Sprint } from '../../classes/sprint';
 })
 export class SprintsListComponent implements OnInit {
   public sprintList: Sprint[];
-  constructor(private sprintService: SprintService) { 
+  constructor(private sprintService: SprintService) {
     this.sprintList = [];
   }
 

@@ -1,4 +1,4 @@
-export interface SprintType {
+export interface ISprint {
     id: number;
     name: string;
     backlog?: any;

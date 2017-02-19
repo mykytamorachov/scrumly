@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import { Sprint } from '../classes/sprint'
-import { SprintType } from '../types/sprint-type'
+import { Sprint } from '../classes/Sprint'
+import { ISprint } from '../types/ISprint'
 
 @Injectable()
 export class SprintService {
