@@ -47,22 +47,10 @@ describe('AppComponent', () => {
     tick();
     expect(location.path()).toBe('');
   }));
+
   it('navigate to "User Story" redirects you to /user-story', fakeAsync(() => {
     router.navigate(['user-story']);
     tick();
     expect(location.path()).toBe('/user-story');
   }));
-
-  // it(`should have as title 'app works!'`, async(() => {
-  //   const fixture = TestBed.createComponent(AppComponent);
-  //   const app = fixture.debugElement.componentInstance;
-  //   expect(app.title).toEqual('app works!');
-  // }));
-
-  // it('should render title in a h1 tag', async(() => {
-  //   const fixture = TestBed.createComponent(AppComponent);
-  //   fixture.detectChanges();
-  //   const compiled = fixture.debugElement.nativeElement;
-  //   expect(compiled.querySelector('h1').textContent).toContain('app works!');
-  // }));
 });
