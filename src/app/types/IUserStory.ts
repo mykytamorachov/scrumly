@@ -1,4 +1,4 @@
-export interface TUserStory {
+export interface IUserStory {
   id: number;
   title: string;
   description?: any;

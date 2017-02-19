@@ -1,4 +1,4 @@
-import { TSprint } from '../types/TSprint'
+import { ISprint } from '../types/ISprint'
 
 export class Sprint {
   public id: number;

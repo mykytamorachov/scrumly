@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SprintService } from '../../services/sprint.service';
-import { TSprint } from '../../types/TSprint';
+import { ISprint } from '../../types/ISprint';
 import { Sprint } from '../../classes/Sprint';
 
 

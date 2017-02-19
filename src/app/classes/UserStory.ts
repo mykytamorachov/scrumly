@@ -1,4 +1,4 @@
-import { TUserStory } from '../types/TUserStory'
+import { IUserStory } from '../types/IUserStory'
 
 export class UserStory {
   public id: number;

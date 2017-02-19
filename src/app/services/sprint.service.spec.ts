@@ -4,7 +4,7 @@ import { TestBed, async, inject } from '@angular/core/testing';
 import { SprintService } from './sprint.service';
 
 import { Sprint } from '../classes/Sprint'
-import { SprintType } from '../types/TSprint'
+import { SprintType } from '../types/ISprint'
 
 describe('SprintService', () => {
   beforeEach(() => {
