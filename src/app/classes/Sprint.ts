@@ -1,4 +1,4 @@
-import { SprintType } from '../types/sprint-type'
+import { TSprint } from '../types/TSprint'
 
 export class Sprint {
   public id: number;
@@ -12,5 +12,5 @@ export class Sprint {
 
   public constructor() {}
 
-  
+
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Sprint } from '../../classes/sprint'
+import { Sprint } from '../../classes/Sprint'
 
 @Component({
   selector: 'scrumly-sprint',
@@ -9,7 +9,7 @@ import { Sprint } from '../../classes/sprint'
 export class SprintComponent implements OnInit {
   @Input()
   sprint: Sprint = new Sprint();
-  constructor() { 
+  constructor() {
 
   }
 

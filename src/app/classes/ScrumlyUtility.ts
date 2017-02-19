@@ -1,8 +1,8 @@
-import { SprintType } from '../types/sprint-type'
-import { Sprint } from '../classes/sprint'
+import { TSprint } from '../types/TSprint'
+import { Sprint } from './Sprint'
 
 export class ScrumlyUtility {
-    static createInstanceFromObject(object: SprintType): Sprint {
+    static createInstanceFromObject(object: TSprint): Sprint {
         try {
         let sprint = new Sprint();
         this.getEntityType(object);
@@ -16,7 +16,7 @@ export class ScrumlyUtility {
         }
     }
 
-    static getEntityType(entity: SprintType): string {
+    static getEntityType(entity: TSprint): string {
         console.log(typeof(entity));
         return typeof(entity);
     }
