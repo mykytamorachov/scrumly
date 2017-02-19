@@ -7,17 +7,19 @@ import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
+import {routing} from "./app-routing.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     ComponentsModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
