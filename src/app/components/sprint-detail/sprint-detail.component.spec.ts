@@ -2,26 +2,25 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-import { MaterialModule } from '@angular/material';
-import 'hammerjs';
 
-import { SprintComponent } from './sprint.component';
+import { SprintDetailComponent } from './sprint-detail.component';
+import {ActivatedRoute, Router} from "@angular/router";
 import {RouterTestingModule} from "@angular/router/testing";
 
-describe('SprintComponent', () => {
-  let component: SprintComponent;
-  let fixture: ComponentFixture<SprintComponent>;
+describe('SprintDetailComponent', () => {
+  let component: SprintDetailComponent;
+  let fixture: ComponentFixture<SprintDetailComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [MaterialModule.forRoot(), RouterTestingModule],
-      declarations: [ SprintComponent]
+      declarations: [ SprintDetailComponent ],
+      imports: [RouterTestingModule]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SprintComponent);
+    fixture = TestBed.createComponent(SprintDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

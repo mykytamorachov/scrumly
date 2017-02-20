@@ -8,6 +8,7 @@ import { SprintComponent } from '../sprint/sprint.component';
 import { SprintService } from '../../services/sprint.service';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
+import {RouterTestingModule} from "@angular/router/testing";
 
 describe('SprintsListComponent', () => {
   let component: SprintsListComponent;
@@ -15,7 +16,7 @@ describe('SprintsListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports:[ MaterialModule.forRoot() ],
+      imports:[ MaterialModule.forRoot(), RouterTestingModule ],
       providers: [SprintService],
       declarations: [ SprintsListComponent, SprintComponent],
     })

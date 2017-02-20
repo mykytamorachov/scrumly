@@ -1,7 +1,6 @@
  <md-list-item *ngIf="sprint">
-  <a md-line href="...">{{ sprint.name }}</a>
+  <a md-line href="#" (click)="onSelect($event, sprint)">{{ sprint.name }}</a>
   <button md-icon-button (click)="showInfo(link)">
     <md-icon>info</md-icon>
   </button>
  </md-list-item>
- 
