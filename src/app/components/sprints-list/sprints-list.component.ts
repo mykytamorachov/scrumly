@@ -29,6 +29,7 @@ export class SprintsListComponent implements OnInit {
    */
   public addSprintToList() {
     let newSprint = new Sprint();
+    newSprint.id = 1;
     newSprint.name = "New Sprint";
     this.sprintList.push(newSprint);
   }
