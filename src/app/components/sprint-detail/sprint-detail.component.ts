@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router, ActivatedRoute} from "@angular/router";
 
 @Component({
@@ -12,10 +12,10 @@ export class SprintDetailComponent implements OnInit {
               private _router: Router) { }
 
   ngOnInit() {
-    //todo можливо переробити через snapshot якщо є впевненість що маршрут не буде використано повторно
+    //TODO(Solomko2): можливо переробити через snapshot якщо є впевненість що маршрут не буде використано повторно
     this._route.params.subscribe(id => {
       console.log(id);
-      //todo get on Sprint ID service from
+      //TODO(Solomko2): get on Sprint ID service from
     });
   }
 

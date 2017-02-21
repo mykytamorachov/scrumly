@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Sprint } from '../../classes/Sprint'
+import {Component, OnInit, Input} from '@angular/core';
+import {Sprint} from '../../classes/Sprint'
 import {ISprint} from "../../types/ISprint";
 import {Router} from "@angular/router";
 
@@ -18,7 +18,7 @@ export class SprintComponent implements OnInit {
   ngOnInit() {
   }
 
-  public onSelect (event: Event, sprint: ISprint) {
+  public goToSprint (event: Event, sprint: ISprint) {
     event.preventDefault();
     this._router.navigate(['/sprint', sprint.id]);
   }

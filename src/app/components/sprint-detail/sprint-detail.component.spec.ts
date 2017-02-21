@@ -1,9 +1,9 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {By} from '@angular/platform-browser';
+import {DebugElement} from '@angular/core';
 
-import { SprintDetailComponent } from './sprint-detail.component';
+import {SprintDetailComponent} from './sprint-detail.component';
 import {ActivatedRoute, Router} from "@angular/router";
 import {RouterTestingModule} from "@angular/router/testing";
 
@@ -13,7 +13,7 @@ describe('SprintDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SprintDetailComponent ],
+      declarations: [SprintDetailComponent],
       imports: [RouterTestingModule]
     })
     .compileComponents();
